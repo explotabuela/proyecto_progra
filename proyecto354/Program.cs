@@ -151,26 +151,6 @@ namespace CasaDonSimon
             Console.ResetColor();
         }
 
-        // este metodo imprime un platillo: nombre verde, precio cyan y descripcion amarilla
-        static void Plato(int numero, string nombre, string precio, string descripcion)
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(margen + numero + ". " + nombre);
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("   " + precio);
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(margen + "   " + descripcion);
-            Console.WriteLine();
-        }
-
-        // este metodo escribe una pregunta de las opciones (cafe caliente/frio, etc)
-        static void Pregunta(string texto)
-        {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine(margen + texto);
-            Console.ResetColor();
-        }
-
         // ===================================================================
         //  METODOS DE LOGICA
         // ===================================================================
@@ -388,34 +368,117 @@ namespace CasaDonSimon
             TituloGrande("Entradas");
             Console.WriteLine();
 
-            Plato(1, "Avena (350ml)", "$90",
-                "Comienza tu día con un toque de calidez y nutrición con nuestra reconfortante avena acompañada de manzana verde, plátano, nuez y pasas.");
-            Plato(2, "Kekis (3 piezas)", "$110",
-                "Los tradicionales, deléitate con los favoritos de Don Simón.");
-            Plato(3, "Hot cakes (3 piezas)", "$130",
-                "Son el desayuno perfecto para empezar tu día con una sonrisa. ¡Un clásico favorito!");
-            Plato(4, "Pan Francés", "$125",
-                "2 rebanadas partidas a la mitad acompañadas de mermelada de la casa y una lluvia de azúcar glass.");
-            Plato(5, "Fruta de temporada Ch (300gr)", "$70",
-                "Acompañada de una porción de yogurt natural, granola y miel.");
-            Plato(6, "Fruta de temporada Gd (500gr)", "$90",
-                "Acompañada de una porción de yogurt natural, granola y miel.");
-            Plato(7, "Guacamole (150gr)", "$90",
-                "Con un toque de tomate, cebolla y cilantro, disfruta de este clásico favorito que te hará desear más con cada bocado.");
-            Plato(8, "Queso fundido (250gr)", "$130",
-                "Tradicional queso tipo gouda gratinado.");
-            Plato(9, "Queso fundido con arrachera (100gr)", "$185",
-                "Tradicional queso tipo gouda gratinado con arrachera.");
-            Plato(10, "Queso fundido con chorizo (80gr)", "$150",
-                "Tradicional queso tipo gouda gratinado con chorizo.");
-            Plato(11, "Panela asada con frijoles de la olla", "$120",
-                "Panela asada (200gr), bañada con salsa verde, con un toque de cilantro y acompañada con frijol de la olla.");
-            Plato(12, "Gorditas con asientos (3 piezas)", "$90",
-                "Acompañadas con salsa pico de gallo.");
-            Plato(13, "Colache (200gr)", "$135",
-                "Calabacita picada con verduras gratinadas y acompañado de frijol refrito.");
-            Plato(14, "Ejotes o nopales con verdura (200gr)", "$130",
-                "Mezclados con verduras, salteados con mantequilla saborizada y acompañados de frijoles refritos.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Avena (350ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $90");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Comienza tu día con un toque de calidez y nutrición con nuestra reconfortante avena acompañada de manzana verde, plátano, nuez y pasas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Kekis (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $110");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Los tradicionales, deléitate con los favoritos de Don Simón.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Hot cakes (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $130");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Son el desayuno perfecto para empezar tu día con una sonrisa. ¡Un clásico favorito!");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Pan Francés");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $125");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 rebanadas partidas a la mitad acompañadas de mermelada de la casa y una lluvia de azúcar glass.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Fruta de temporada Ch (300gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $70");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Acompañada de una porción de yogurt natural, granola y miel.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "6. Fruta de temporada Gd (500gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $90");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Acompañada de una porción de yogurt natural, granola y miel.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "7. Guacamole (150gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $90");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Con un toque de tomate, cebolla y cilantro, disfruta de este clásico favorito que te hará desear más con cada bocado.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "8. Queso fundido (250gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $130");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Tradicional queso tipo gouda gratinado.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "9. Queso fundido con arrachera (100gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Tradicional queso tipo gouda gratinado con arrachera.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "10. Queso fundido con chorizo (80gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Tradicional queso tipo gouda gratinado con chorizo.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "11. Panela asada con frijoles de la olla");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $120");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Panela asada (200gr), bañada con salsa verde, con un toque de cilantro y acompañada con frijol de la olla.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "12. Gorditas con asientos (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $90");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Acompañadas con salsa pico de gallo.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "13. Colache (200gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $135");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Calabacita picada con verduras gratinadas y acompañado de frijol refrito.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "14. Ejotes o nopales con verdura (200gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $130");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Mezclados con verduras, salteados con mantequilla saborizada y acompañados de frijoles refritos.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -507,10 +570,21 @@ namespace CasaDonSimon
             TituloGrande("Chilaquiles");
             Console.WriteLine();
 
-            Plato(1, "Chilaquiles rojos / verdes", "$140",
-                "Crujientes totopos bañados en salsa roja o verde, con crema, queso y cebolla.");
-            Plato(2, "Chilaquiles suizos / poblanos", "$150",
-                "Gratinados o bañados en salsa poblana, con crema, queso y cebolla.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Chilaquiles rojos / verdes");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $140");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Crujientes totopos bañados en salsa roja o verde, con crema, queso y cebolla.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Chilaquiles suizos / poblanos");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Gratinados o bañados en salsa poblana, con crema, queso y cebolla.");
+            Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.Magenta;
             Centrar("- - - Puedes agregarles un extra - - -");
@@ -548,7 +622,8 @@ namespace CasaDonSimon
 
             // pregunto por los extras (sin que quede pegado a la orilla)
             Console.WriteLine();
-            Pregunta("¿Desea agregarle huevo por $25?   (1 = Sí   2 = No)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(margen + "¿Desea agregarle huevo por $25?   (1 = Sí   2 = No)");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(margen + "Su elección: ");
             int huevo = LeerEntero(1, 2);
@@ -559,7 +634,8 @@ namespace CasaDonSimon
             }
 
             Console.WriteLine();
-            Pregunta("¿Desea agregarle pollo por $35?   (1 = Sí   2 = No)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(margen + "¿Desea agregarle pollo por $35?   (1 = Sí   2 = No)");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(margen + "Su elección: ");
             int pollo = LeerEntero(1, 2);
@@ -588,16 +664,45 @@ namespace CasaDonSimon
             Centrar("(Los precios son por pieza)");
             Console.WriteLine();
 
-            Plato(1, "Machaca (50gr)", "$120",
-                "Burrito de machaca acompañado con salsa pico de gallo y guacamole.");
-            Plato(2, "Bistec de arrachera (100gr)", "$120",
-                "Burrito de bistec de arrachera acompañado con salsa pico de gallo y guacamole.");
-            Plato(3, "Papas con chorizo (80gr)", "$70",
-                "Burrito de papas con chorizo acompañado con salsa pico de gallo y guacamole.");
-            Plato(4, "Chicharrón (80gr)", "$95",
-                "Burrito de chicharrón acompañado con salsa pico de gallo y guacamole.");
-            Plato(5, "Frijol con queso fresco", "$60",
-                "Burrito de frijol con queso fresco acompañado con salsa pico de gallo y guacamole.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Machaca (50gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $120");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Burrito de machaca acompañado con salsa pico de gallo y guacamole.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Bistec de arrachera (100gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $120");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Burrito de bistec de arrachera acompañado con salsa pico de gallo y guacamole.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Papas con chorizo (80gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $70");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Burrito de papas con chorizo acompañado con salsa pico de gallo y guacamole.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Chicharrón (80gr)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $95");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Burrito de chicharrón acompañado con salsa pico de gallo y guacamole.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Frijol con queso fresco");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Burrito de frijol con queso fresco acompañado con salsa pico de gallo y guacamole.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -653,28 +758,93 @@ namespace CasaDonSimon
             TituloGrande("Huevos");
             Console.WriteLine();
 
-            Plato(1, "Huevos o claras al gusto", "$130",
-                "A elegir: jamón, salchicha, tocino, nopales, mexicanos, papas, chorizo, ejotes, o sopitas. A elegir: chilorio, machaca o chicharrón.");
-            Plato(2, "Huevos campesinos", "$150",
-                "2 piezas de huevo estrellado montados sobre jamón y tortilla frita, bañados en salsa de la casa.");
-            Plato(3, "Huevos a la tambora", "$180",
-                "2 piezas de huevo estrellado montados sobre chilorio natural y tortilla frita, bañados con salsa ranchera.");
-            Plato(4, "Montaditos sinaloenses", "$175",
-                "2 piezas de huevo estrellado montados sobre pan de caja dorado con mantequilla, una cama de aguacate, coronado con tiras de tocino, acompañados de ensalada fresca con queso panela.");
-            Plato(5, "Huevos divorciados", "$165",
-                "2 piezas de huevo estrellado montados sobre jamón y gordita frita, uno bañado en salsa verde y otro en salsa roja.");
-            Plato(6, "Huevos arrieros", "$185",
-                "2 piezas de huevo bañados con salsa arriera, y puntas de arrachera (80gr) encebolladas.");
-            Plato(7, "Omelette Don Simón", "$179",
-                "Relleno de espinaca, champiñón, mantequilla saborizada y acompañado de papas fritas en cuadros. ¡Pídelo bañado en tu salsa favorita! (Roja / Verde / Ranchera).");
-            Plato(8, "Omelette de 3 quesos", "$179",
-                "Relleno de mezcla de 3 quesos, jamón y acompañado de papas fritas en cuadros. ¡Pídelo bañado en tu salsa favorita! (Roja / Verde / Ranchera).");
-            Plato(9, "Omelette de camarón", "$210",
-                "Relleno de camarón (80gr), con queso gratinado, bañado en salsa con crema de chile morrón rojo y acompañado de papas fritas en cuadros.");
-            Plato(10, "Omelette poblano", "$179",
-                "Relleno de rajas poblanas con queso, elote y cebolla, bañado en salsa poblana y acompañado de papas fritas en cuadros.");
-            Plato(11, "Omelette culichi", "$185",
-                "Relleno de chilorio (80gr) con queso, bañado en salsa ranchera y acompañado de papas fritas en cuadros.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Huevos o claras al gusto");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $130");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   A elegir: jamón, salchicha, tocino, nopales, mexicanos, papas, chorizo, ejotes, o sopitas. A elegir: chilorio, machaca o chicharrón.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Huevos campesinos");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo estrellado montados sobre jamón y tortilla frita, bañados en salsa de la casa.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Huevos a la tambora");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $180");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo estrellado montados sobre chilorio natural y tortilla frita, bañados con salsa ranchera.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Montaditos sinaloenses");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $175");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo estrellado montados sobre pan de caja dorado con mantequilla, una cama de aguacate, coronado con tiras de tocino, acompañados de ensalada fresca con queso panela.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Huevos divorciados");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $165");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo estrellado montados sobre jamón y gordita frita, uno bañado en salsa verde y otro en salsa roja.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "6. Huevos arrieros");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo bañados con salsa arriera, y puntas de arrachera (80gr) encebolladas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "7. Omelette Don Simón");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $179");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Relleno de espinaca, champiñón, mantequilla saborizada y acompañado de papas fritas en cuadros. ¡Pídelo bañado en tu salsa favorita! (Roja / Verde / Ranchera).");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "8. Omelette de 3 quesos");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $179");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Relleno de mezcla de 3 quesos, jamón y acompañado de papas fritas en cuadros. ¡Pídelo bañado en tu salsa favorita! (Roja / Verde / Ranchera).");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "9. Omelette de camarón");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $210");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Relleno de camarón (80gr), con queso gratinado, bañado en salsa con crema de chile morrón rojo y acompañado de papas fritas en cuadros.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "10. Omelette poblano");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $179");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Relleno de rajas poblanas con queso, elote y cebolla, bañado en salsa poblana y acompañado de papas fritas en cuadros.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "11. Omelette culichi");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Relleno de chilorio (80gr) con queso, bañado en salsa ranchera y acompañado de papas fritas en cuadros.");
+            Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Centrar("Todos los desayunos van acompañados de frijoles refritos.");
@@ -758,24 +928,77 @@ namespace CasaDonSimon
             TituloGrande("Desayunos completos");
             Console.WriteLine();
 
-            Plato(1, "Combinación poblana", "$175",
-                "2 piezas de huevo, rajas poblanas con queso, elote y cebolla, tamal natural, frijol refrito y coronado con aguacate.");
-            Plato(2, "Combinación del campo", "$175",
-                "2 piezas de huevo, papas con verdura gratinadas, chilaquiles verdes, frijol refrito y coronado con aguacate.");
-            Plato(3, "Combinación mar y tierra", "$210",
-                "2 piezas de huevo, tiras de arrachera (100gr) encebolladas, camarón (80gr) ranchero, dos quesadillas, frijol refrito y coronado con aguacate.");
-            Plato(4, "Combinación sinaloense", "$185",
-                "2 piezas de huevo, chilorio (80gr) a la mexicana, dos quesadillas, frijol refrito y coronado con aguacate.");
-            Plato(5, "Combinación sonora", "$185",
-                "2 piezas de huevo, machaca (50gr) a la mexicana, chilaquiles rojos, frijol refrito y coronado con aguacate.");
-            Plato(6, "Combinación Cosalá", "$175",
-                "2 piezas de huevo, colache con verdura, queso gratinado, tamal frito, frijol refrito y coronado con aguacate.");
-            Plato(7, "Combinación mi rancho", "$200",
-                "2 piezas de huevo, tiras de arrachera (100gr) encebolladas, chorizo (80gr) con papa, frijol refrito, dos quesadillas y coronado con aguacate.");
-            Plato(8, "Combinación Don Simón", "$185",
-                "Tamal gratinado, chilaquiles poblanos, chicharrones (80gr) a la mexicana, frijol refrito y coronado con aguacate.");
-            Plato(9, "Combinación americana", "$170",
-                "2 piezas de hot cakes, 2 piezas de huevos estrellados y tiras de tocino.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Combinación poblana");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $175");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, rajas poblanas con queso, elote y cebolla, tamal natural, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Combinación del campo");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $175");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, papas con verdura gratinadas, chilaquiles verdes, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Combinación mar y tierra");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $210");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, tiras de arrachera (100gr) encebolladas, camarón (80gr) ranchero, dos quesadillas, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Combinación sinaloense");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, chilorio (80gr) a la mexicana, dos quesadillas, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Combinación sonora");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, machaca (50gr) a la mexicana, chilaquiles rojos, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "6. Combinación Cosalá");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $175");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, colache con verdura, queso gratinado, tamal frito, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "7. Combinación mi rancho");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $200");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de huevo, tiras de arrachera (100gr) encebolladas, chorizo (80gr) con papa, frijol refrito, dos quesadillas y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "8. Combinación Don Simón");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Tamal gratinado, chilaquiles poblanos, chicharrones (80gr) a la mexicana, frijol refrito y coronado con aguacate.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "9. Combinación americana");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $170");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 piezas de hot cakes, 2 piezas de huevos estrellados y tiras de tocino.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -847,20 +1070,61 @@ namespace CasaDonSimon
             TituloGrande("Los tradicionales");
             Console.WriteLine();
 
-            Plato(1, "Tacos dorados (3 piezas)", "$150",
-                "De maíz, rellenas de papa (100gr) con carne deshebrada (50gr), coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañados de consomé de res.");
-            Plato(2, "Tostadas (3 piezas)", "$150",
-                "De carne deshebrada (60gr) con frijol y papas fritas en cuadros, coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañadas de consomé de res.");
-            Plato(3, "Gorditas (3 piezas)", "$150",
-                "De carne deshebrada (60gr) con frijol y papas fritas en cuadros, coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañadas de consomé de res.");
-            Plato(4, "Enchiladas verdes o rojas (3 piezas)", "$165",
-                "De maíz, rellenas de pechuga de pollo deshebrada (90gr) coronadas con lechuga romana, tomate, pepino, cebolla curtida, aguacate, queso, crema y acompañadas de frijoles refritos.");
-            Plato(5, "Enchiladas suizas o poblanas (3 piezas)", "$170",
-                "De maíz, rellenas de pechuga de pollo deshebrada (90gr), gratinadas, coronadas con aguacate y acompañadas de frijoles refritos.");
-            Plato(6, "Orden de asado", "$170",
-                "Papa (100gr) y carne (100gr) en forma de cuadros, coronado con lechuga romana, tomate, pepino, cebolla curtida, aguacate, queso, crema y acompañado de consomé de res.");
-            Plato(7, "Pieza taco, tostada o gordita", "$55",
-                "Pieza individual de tu antojo.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Tacos dorados (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De maíz, rellenas de papa (100gr) con carne deshebrada (50gr), coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañados de consomé de res.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Tostadas (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De carne deshebrada (60gr) con frijol y papas fritas en cuadros, coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañadas de consomé de res.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Gorditas (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $150");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De carne deshebrada (60gr) con frijol y papas fritas en cuadros, coronadas con lechuga romana, tomate, pepino, cebolla curtida, queso, crema y acompañadas de consomé de res.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Enchiladas verdes o rojas (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $165");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De maíz, rellenas de pechuga de pollo deshebrada (90gr) coronadas con lechuga romana, tomate, pepino, cebolla curtida, aguacate, queso, crema y acompañadas de frijoles refritos.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Enchiladas suizas o poblanas (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $170");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De maíz, rellenas de pechuga de pollo deshebrada (90gr), gratinadas, coronadas con aguacate y acompañadas de frijoles refritos.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "6. Orden de asado");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $170");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Papa (100gr) y carne (100gr) en forma de cuadros, coronado con lechuga romana, tomate, pepino, cebolla curtida, aguacate, queso, crema y acompañado de consomé de res.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "7. Pieza taco, tostada o gordita");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $55");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Pieza individual de tu antojo.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -924,10 +1188,21 @@ namespace CasaDonSimon
             TituloGrande("Sándwiches");
             Console.WriteLine();
 
-            Plato(1, "Sándwich especial", "$185",
-                "Sándwich de pechuga de pollo (100gr), tocino y jamón, gratinado por encima, acompañado de papas fritas en cuadros y un mix de lechuga. ¡Delicioso!");
-            Plato(2, "Club sándwich", "$140",
-                "Sándwich de jamón y queso tipo americano, lechuga, tomate, aguacate, acompañado de papas a la francesa.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Sándwich especial");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Sándwich de pechuga de pollo (100gr), tocino y jamón, gratinado por encima, acompañado de papas fritas en cuadros y un mix de lechuga. ¡Delicioso!");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Club sándwich");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $140");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Sándwich de jamón y queso tipo americano, lechuga, tomate, aguacate, acompañado de papas a la francesa.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -971,14 +1246,37 @@ namespace CasaDonSimon
             TituloGrande("Menú kids");
             Console.WriteLine();
 
-            Plato(1, "Salchipulpos con huevo", "$125",
-                "2 salchichas cortadas en forma de pulpo y 2 piezas de huevo.");
-            Plato(2, "Mini hot cakes (3 piezas)", "$90",
-                "Con porción de plátano y mermelada de fresa artesanal.");
-            Plato(3, "Combinación kids", "$140",
-                "3 mini hot cakes, 2 piezas de huevo revuelto y salchipulpo.");
-            Plato(4, "Deditos \"Pío Pío\" (6 piezas)", "$140",
-                "De pechuga de pollo (120gr), empanizados, acompañados de papas a la francesa (80gr) y de aderezo kétchup.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Salchipulpos con huevo");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $125");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   2 salchichas cortadas en forma de pulpo y 2 piezas de huevo.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Mini hot cakes (3 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $90");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Con porción de plátano y mermelada de fresa artesanal.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Combinación kids");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $140");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   3 mini hot cakes, 2 piezas de huevo revuelto y salchipulpo.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Deditos \"Pío Pío\" (6 piezas)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $140");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   De pechuga de pollo (120gr), empanizados, acompañados de papas a la francesa (80gr) y de aderezo kétchup.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -1030,54 +1328,197 @@ namespace CasaDonSimon
             TituloGrande("Bebidas");
             Console.WriteLine();
 
-            Plato(1, "Café americano (250ml)", "$60",
-                "Café clásico preparado al momento, intenso y aromático.");
-            Plato(2, "Café descafeinado (250ml)", "$60",
-                "Sabor y cuerpo del café con menos cafeína.");
-            Plato(3, "Café de olla (350ml)", "$65",
-                "Receta tradicional con notas de canela y piloncillo.");
-            Plato(4, "Café Chai (250ml)", "Caliente $65   Rocas $75   Frapé $75",
-                "Mezcla especiada y cremosa estilo chai.");
-            Plato(5, "Capuchino vainilla / avellana / original (250ml)", "Caliente $65   Rocas $75   Frapé $75",
-                "Espresso con leche espumosa, elige tu sabor.");
-            Plato(6, "Chocolate caliente (350ml)", "$75",
-                "Cacao cremoso y dulce.");
-            Plato(7, "Agua para café (250ml)", "$50",
-                "Preparación ligera de café diluido.");
-            Plato(8, "Té (250ml)", "$50",
-                "A elegir: manzanilla, verde o canela.");
-            Plato(9, "Té Chai Vainilla (250ml)", "Caliente $65   Rocas $75   Frapé $75",
-                "Infusión especiada con un toque de vainilla.");
-            Plato(10, "Chocomilk (400ml)", "$75",
-                "Bebida láctea con chocolate, bien fría.");
-            Plato(11, "Leche (300ml)", "$50",
-                "Vaso de leche fría.");
-            Plato(12, "Licuados (400ml)", "$75",
-                "A elegir: plátano, fresa o frutas de temporada.");
-            Plato(13, "Jugos (400ml)", "$70",
-                "A elegir: verde, betabel o zanahoria.");
-            Plato(14, "Jugo de naranja (300ml)", "$60",
-                "Naranja exprimida al momento.");
-            Plato(15, "Refrescos (355ml)", "$50",
-                "Surtido de bebidas gaseosas.");
-            Plato(16, "Limonada (400ml)", "$55",
-                "Clásica y refrescante.");
-            Plato(17, "Limonada mineral (400ml)", "$60",
-                "Con burbujas y un toque cítrico.");
-            Plato(18, "Té helado (400ml)", "$55",
-                "Té frío con notas cítricas.");
-            Plato(19, "Aguas frescas (400ml)", "$60",
-                "A elegir: pepino limón, fresa limón, horchata o jamaica.");
-            Plato(20, "Horchata de fresa (400ml)", "$70",
-                "Horchata con un rico toque de fresa.");
-            Plato(21, "Horchata café (400ml)", "$70",
-                "Horchata con un toque de café.");
-            Plato(22, "Jamaica con fruta (400ml)", "$65",
-                "Agua de jamaica con fruta picada.");
-            Plato(23, "Agua embotellada (600ml)", "$29",
-                "Agua natural embotellada.");
-            Plato(24, "Agua mineral (600ml)", "$50",
-                "Agua mineral con gas.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Café americano (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Café clásico preparado al momento, intenso y aromático.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Café descafeinado (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Sabor y cuerpo del café con menos cafeína.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Café de olla (350ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $65");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Receta tradicional con notas de canela y piloncillo.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Café Chai (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   Caliente $65   Rocas $75   Frapé $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Mezcla especiada y cremosa estilo chai.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Capuchino vainilla / avellana / original (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   Caliente $65   Rocas $75   Frapé $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Espresso con leche espumosa, elige tu sabor.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "6. Chocolate caliente (350ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Cacao cremoso y dulce.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "7. Agua para café (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $50");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Preparación ligera de café diluido.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "8. Té (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $50");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   A elegir: manzanilla, verde o canela.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "9. Té Chai Vainilla (250ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   Caliente $65   Rocas $75   Frapé $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Infusión especiada con un toque de vainilla.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "10. Chocomilk (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Bebida láctea con chocolate, bien fría.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "11. Leche (300ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $50");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Vaso de leche fría.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "12. Licuados (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $75");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   A elegir: plátano, fresa o frutas de temporada.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "13. Jugos (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $70");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   A elegir: verde, betabel o zanahoria.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "14. Jugo de naranja (300ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Naranja exprimida al momento.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "15. Refrescos (355ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $50");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Surtido de bebidas gaseosas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "16. Limonada (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $55");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Clásica y refrescante.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "17. Limonada mineral (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Con burbujas y un toque cítrico.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "18. Té helado (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $55");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Té frío con notas cítricas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "19. Aguas frescas (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $60");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   A elegir: pepino limón, fresa limón, horchata o jamaica.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "20. Horchata de fresa (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $70");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Horchata con un rico toque de fresa.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "21. Horchata café (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $70");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Horchata con un toque de café.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "22. Jamaica con fruta (400ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $65");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Agua de jamaica con fruta picada.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "23. Agua embotellada (600ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $29");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Agua natural embotellada.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "24. Agua mineral (600ml)");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $50");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Agua mineral con gas.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -1111,7 +1552,8 @@ namespace CasaDonSimon
                     break;
                 case 4:
                     Console.WriteLine();
-                    Pregunta("¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int prepChai = LeerEntero(1, 3);
@@ -1134,13 +1576,15 @@ namespace CasaDonSimon
                     break;
                 case 5:
                     Console.WriteLine();
-                    Pregunta("¿Qué sabor?   (1 = Vainilla   2 = Avellana   3 = Original)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Qué sabor?   (1 = Vainilla   2 = Avellana   3 = Original)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int saborCap = LeerEntero(1, 3);
 
                     Console.WriteLine();
-                    Pregunta("¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int prepCap = LeerEntero(1, 3);
@@ -1191,7 +1635,8 @@ namespace CasaDonSimon
                     break;
                 case 8:
                     Console.WriteLine();
-                    Pregunta("¿Qué tipo de té?   (1 = Manzanilla   2 = Verde   3 = Canela)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Qué tipo de té?   (1 = Manzanilla   2 = Verde   3 = Canela)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int tipoTe = LeerEntero(1, 3);
@@ -1212,7 +1657,8 @@ namespace CasaDonSimon
                     break;
                 case 9:
                     Console.WriteLine();
-                    Pregunta("¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Cómo lo quiere?   (1 = Caliente   2 = En las rocas   3 = Frapé)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int prepTeChai = LeerEntero(1, 3);
@@ -1243,7 +1689,8 @@ namespace CasaDonSimon
                     break;
                 case 12:
                     Console.WriteLine();
-                    Pregunta("¿Qué sabor de licuado?   (1 = Plátano   2 = Fresa   3 = Frutas de temporada)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Qué sabor de licuado?   (1 = Plátano   2 = Fresa   3 = Frutas de temporada)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int sabLicuado = LeerEntero(1, 3);
@@ -1264,7 +1711,8 @@ namespace CasaDonSimon
                     break;
                 case 13:
                     Console.WriteLine();
-                    Pregunta("¿Qué tipo de jugo?   (1 = Verde   2 = Betabel   3 = Zanahoria)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Qué tipo de jugo?   (1 = Verde   2 = Betabel   3 = Zanahoria)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int tipoJugo = LeerEntero(1, 3);
@@ -1305,8 +1753,9 @@ namespace CasaDonSimon
                     break;
                 case 19:
                     Console.WriteLine();
-                    Pregunta("¿Qué sabor de agua fresca?");
-                    Pregunta("(1 = Pepino limón   2 = Fresa limón   3 = Horchata   4 = Jamaica)");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.WriteLine(margen + "¿Qué sabor de agua fresca?");
+                    Console.WriteLine(margen + "(1 = Pepino limón   2 = Fresa limón   3 = Horchata   4 = Jamaica)");
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.Write(margen + "Su elección: ");
                     int sabAgua = LeerEntero(1, 4);
@@ -1401,16 +1850,45 @@ namespace CasaDonSimon
             TituloGrande("Especialidades");
             Console.WriteLine();
 
-            Plato(1, "Camarones rancheros", "$200",
-                "Camarones (150gr) rancheros, acompañados de frijol refrito y dos quesadillas.");
-            Plato(2, "Marlin sinaloense", "$200",
-                "Marlin (150gr) a la mexicana, acompañado de frijol refrito y dos quesadillas.");
-            Plato(3, "Lengua de res", "$240",
-                "Medallones de lengua de res (150gr) en salsa ranchera, verde, roja o poblana, acompañada de frijol refrito y dos quesadillas. También disponible en caldo (sin frijol ni quesadillas).");
-            Plato(4, "Bistec ranchero", "$240",
-                "Bistec de arrachera (200gr), acompañado de frijol refrito y dos quesadillas.");
-            Plato(5, "Hígado encebollado / ranchero", "$160",
-                "Hígado (200gr), acompañado de frijol refrito y dos quesadillas.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Camarones rancheros");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $200");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Camarones (150gr) rancheros, acompañados de frijol refrito y dos quesadillas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Marlin sinaloense");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $200");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Marlin (150gr) a la mexicana, acompañado de frijol refrito y dos quesadillas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "3. Lengua de res");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $240");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Medallones de lengua de res (150gr) en salsa ranchera, verde, roja o poblana, acompañada de frijol refrito y dos quesadillas. También disponible en caldo (sin frijol ni quesadillas).");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "4. Bistec ranchero");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $240");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Bistec de arrachera (200gr), acompañado de frijol refrito y dos quesadillas.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "5. Hígado encebollado / ranchero");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $160");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Hígado (200gr), acompañado de frijol refrito y dos quesadillas.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -1467,10 +1945,21 @@ namespace CasaDonSimon
             Centrar("(Exclusivos de sábado y domingo)");
             Console.WriteLine();
 
-            Plato(1, "Orden de menudo tradicional", "$175",
-                "Menudo tradicional preparado con la receta de la casa.");
-            Plato(2, "Orden de menudo guisado", "$185",
-                "Menudo guisado al estilo Don Simón.");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "1. Orden de menudo tradicional");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $175");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Menudo tradicional preparado con la receta de la casa.");
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(margen + "2. Orden de menudo guisado");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("   $185");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(margen + "   Menudo guisado al estilo Don Simón.");
+            Console.WriteLine();
 
             LineaDecorada();
             Console.ForegroundColor = ConsoleColor.Magenta;
